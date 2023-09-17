@@ -8,20 +8,45 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
             }
+            caption{
+                font-size: 1.5em;
+                font-weight: bold;
+                padding: 10px;
+                background-color: lightgray;
+            }
             table{
                 width: 500px;
+                border-collapse: collapse;
+                position: relative;
             }
             td,th{
                 border: 1px solid black;
-                
-
+                padding: 10px;             
             }
+            thead, tfoot{
+                background-color: gray;
+                color: white;
+            }
+            thead > tr > th{
+                position:sticky;
+                top: -1px;
+                
+            }
+            tbody > tr:nth-child(2n-1){
+                background-color: lightgray;
+            }
+            td.num{
+                text-align: right;
+            }
+
     </style>
 
 
 </head>
 <body>
+    <h1>Uso de Tabelas Grandes</h1>
     <table>
+        <caption>Populações das Unidades Federativas.</caption>
         <thead>
           <tr>
             <th>Estado</th>
@@ -33,9 +58,48 @@
             <th>São Paulo</th>
             <th>45 919 049</th>
            </tr>
+           <tr>
+            <th>Minas Gerais</th>
+            <th>20 538 718	</th>
+           </tr>
+           <tr>
+            <th> Rio de Janeiro</th>
+            <th>16 054 524</th>
+           </tr>
+           <tr>
+            <th>Bahia</th>
+            <th>14 136 417</th>
+           </tr>
+           <tr>
+            <th>Paraná</th>
+            <th>11 443 208</th>
+           </tr>
+           <tr>
+            <th>Rio Grande do Sul</th>
+            <th>10 880 506</th>
+           </tr>
+           <tr>
+            <th>Pernambuco</th>
+            <th>9 058 155</th>
+           </tr>
+           <tr>
+            <th>Ceará</th>
+            <th>8 791 688</th>
+           </tr>
+           <tr>
+            <th>Pará</th>
+            <th>8 116 132</th>
+           </tr>
+           <tr>
+            <th>Santa Catarina</th>
+            <th>7 609 601</th>
+           </tr>
         </tbody>
         <tfoot>
-
+            <tr>
+                <th>Total de Habitantes</th>
+                <th>152 547 998</th>
+            </tr>
         </tfoot>
     </table>
  
